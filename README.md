@@ -25,6 +25,9 @@ This application is built using a serverless architecture on Amazon Web Services
 5. The API returns the response in JSON format
 6. The frontend displays the updated view count
 
+## 🌐 Live Demo
+http://sam-gh-cloud-resume.s3-website-us-east-1.amazonaws.com
+
 ## 🛠️ Implementation Steps
 🔹 Step 1: Set Up DynamoDB (Database Layer)
 
