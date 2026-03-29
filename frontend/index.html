@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samuel Tettey-Fio - Cloud Resume</title>
+</head>
+<body>
+
+    <h1>Samuel Tettey-Fio</h1>
+    <p><strong>Skills:</strong> AWS, CloudFormation, EC2, S3, DynamoDB, Lambda, DevOps and more</p>
+    <p><strong>Experience:</strong> Cloud Projects + Web Design + Ads</p>
+    <p><strong>Education:</strong> Self-taught + AWS Training</p>
+
+    <h2>Total Views: <span id="views">Loading...</span></h2>
+
+    <script>
+        fetch('https://43mghv1t97.execute-api.us-east-1.amazonaws.com/prod/resume')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('views').innerText = data.Views;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+</body>
+</html>
